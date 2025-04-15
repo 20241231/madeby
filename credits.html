@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CTF 제작 참여자 크레딧</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+      overflow: hidden;
+    }
+
+    .credits {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .scrolling-text {
+      text-align: center;
+      animation: scrollUp 40s linear infinite;
+      font-size: 1.5em;
+      white-space: pre-line;
+    }
+
+    @keyframes scrollUp {
+      0% {
+        transform: translateY(100%);
+      }
+      100% {
+        transform: translateY(-100%);
+      }
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 2em;
+      text-transform: uppercase;
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: 1.7em;
+      margin-top: 1.5em;
+    }
+
+    .role {
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="credits">
+    <div class="scrolling-text">
+      <h1>CTF 프로젝트 크레딧</h1>
+
+      <div class="name">유승민 (팀장)</div>
+      <div class="role">- 록키리눅스 전반적인 세팅<br>- jaeho → smyoo 상승 (스테가노그래피)<br>- smyoo → gilhyeong 상승 (.bash_login)</div>
+
+      <div class="name">이길형 (팀원)</div>
+      <div class="role">- 헨젤과 그레텔 페이지<br>- 알리바바 페이지<br>- FTP 구성<br>- 루트 권한 상승</div>
+
+      <div class="name">이재호 (팀원)</div>
+      <div class="role">- OVA 다운로드 페이지<br>- 아파치 기본 페이지 + sunglass90 페이지<br>- Wordpress 구성<br>- sunglass 계정 미니게임</div>
+
+      <br><br><br>
+      <div>감사합니다.</div>
+    </div>
+  </div>
+</body>
+</html>
