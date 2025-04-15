@@ -2,67 +2,62 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>CTF 크레딧 - 트랜스포머 스타일</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CTF 제작 참여자 크레딧</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: radial-gradient(ellipse at center, #000000 0%, #050505 100%);
-      color: #00ccff;
-      font-family: 'Orbitron', sans-serif;
+      background-color: black;
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
       overflow: hidden;
     }
 
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
-
-    .credits-container {
+    .credits {
       position: absolute;
       width: 100%;
       height: 100%;
-      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .scrolling-text {
-      position: absolute;
-      width: 100%;
       text-align: center;
-      animation: scrollUp 25s linear forwards;
-      font-size: 1.4em;
-      text-shadow: 0 0 10px #00ccff, 0 0 20px #0088aa;
+      animation: scrollUp 35s linear infinite;
+      font-size: 1.5em;
       white-space: pre-line;
     }
 
     @keyframes scrollUp {
       0% {
-        top: 100%;
+        transform: translateY(100%);
       }
       100% {
-        top: -150%;
+        transform: translateY(-100%);
       }
     }
 
     h1 {
-      font-size: 2.8em;
+      font-size: 2.5em;
       margin-bottom: 2em;
       text-transform: uppercase;
-      color: #ffffff;
-      text-shadow: 0 0 15px #00ccff, 0 0 30px #0088aa;
     }
 
     .name {
       font-weight: bold;
-      font-size: 1.8em;
-      margin-top: 2em;
+      font-size: 1.7em;
+      margin-top: 1.5em;
     }
 
     .role {
-      font-size: 1.2em;
-      margin-bottom: 1.5em;
+      margin-bottom: 1em;
     }
   </style>
 </head>
 <body>
-  <div class="credits-container">
+  <div class="credits">
     <div class="scrolling-text">
       <h1>CTF 참여인원</h1>
 
@@ -76,7 +71,7 @@
       <div class="role">- OVA 다운로드 페이지<br>- 아파치 기본 페이지 + sunglass90 페이지<br>- Wordpress 구성<br>- sunglass 계정 미니게임</div>
 
       <br><br><br>
-      <div>— YOU JUST CAPTURED THE FLAG —</div>
+      <div>감사합니다.</div>
     </div>
   </div>
 </body>
